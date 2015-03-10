@@ -4,7 +4,8 @@
   "description": "SD Data Handbook",
   "main": "index.js",
   "dependencies": {
-    "gitbook-plugin-anchors": "^0.4.0"
+    "gitbook-plugin-anchors": "^0.4.0",
+    "gitbook-plugin-ga": "^0.2.1"
   },
   "devDependencies": {},
   "scripts": {
