@@ -1,13 +1,14 @@
 {
-  "name": "node-js-sample",
+  "name": "Gitbook Server",
   "version": "0.1.0",
-  "description": "A sample Node.js app using Express 4",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
-    "express": "^4.0.0"
+    "express": "^4.0.0",
+    "http-auth": "^2.2.5"
   },
   "engines": {
     "node": "0.10.x"
@@ -18,12 +19,8 @@
   },
   "keywords": [
     "node",
-    "heroku",
     "express"
   ],
-  "author": "Mark Pundsack",
-  "contributors": [
-    "Zeke Sikelianos <zeke@sikelianos.com> (http://zeke.sikelianos.com)"
-  ],
+  "author": "Maksim Pecherskiy",
   "license": "MIT"
 }
