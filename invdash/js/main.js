@@ -1,5 +1,6 @@
 $(document).ready(function(){
 var gauges = new Array();
+$('#dept-search').val('');
 
 Tabletop.init({ key: '1FAQK4XC11BFXcczEy-Dfhl1dHCgoDMrubz7jg8gi484',
   callback: function(data, tabletop) {
@@ -20,10 +21,23 @@ Tabletop.init({ key: '1FAQK4XC11BFXcczEy-Dfhl1dHCgoDMrubz7jg8gi484',
 
       }));
     });
+    $('#dept-search').keyup(function(event) {
+      console.log(event);
+      console.log($(this).val());
+      var search = ($(this).val()).toLowerCase();
+      $('.chart-title').each(function() {
+        var dText = ($(this).text()).toLowerCase();
+        if(dText.search(search) > -1) {
+          $(this).parent().show();
+        }
+        else {
+          $(this).parent().hide();
+        }
+      });
+    });
   },
   simpleSheet: true,
   wanted: ['i2']
 });
-
 
 });
