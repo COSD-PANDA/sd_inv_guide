@@ -2,7 +2,6 @@
 * Other divisions in your department
 * Other municipalities
 * County
-* Management
 * Council Offices
 * Mayor's Office
 * DCOOs / COOs
